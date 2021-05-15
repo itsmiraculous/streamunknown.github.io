@@ -107,22 +107,35 @@
             </div>
         </div>
     </div>
-<div class="container-fluid p-3 my-3 text-black cid-rXAtDb3XLd" id="custom-html-1w" data-rv-view="281">
-  <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css">
+ <video width="100%" controls="" poster="">
+<source src="" type="video/mp4">
+</video>
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css">
   <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
-  <video poster="" id="player" playsinline="" controls=""> <source src="" type="video/mp4"> </video>
+ <script>
+      document.addEventListener('DOMContentLoaded', () => {
+          const player = Plyr.setup('.js-player');
+      });
+  </script>
+  
+   <!-- CUSTOM -->
+        
 <script src="player_data/polyfill.min.js"></script>
 <script src="player_data/plyr.min.js"></script>
-<section class="mbr-section content8 cid-suGnIsqkqK" id="content8-9x">
+<script id="rendered-js">
+          // Change the second argument to your options:
+// https://github.com/sampotts/plyr/#options
+const player = new Plyr('video', { captions: { active: true } });
 
-
-
-    <div>
+// Expose player so it can be used from the console
+window.player = player;
+          //# sourceURL=pen.js
+        </script>
        
              </br><a class="btn lasturl" href=""><button class="navbar-toggler" style="background: #ff2b2b;width: 95%;"><h3 style="color: white;font-size: 12px;margin: 5px;margin-bottom: 7px;">LAST EPISODE</h3></button></a>
     <a class="btn display-4" href=""><button class="navbar-toggler" style="background: #ff2b2b;width: 95%;"><h3 style="color: white;font-size: 12px;margin: 5px;margin-bottom: 7px;">DOWNLOAD</h3></button></a>
     <a class="btn nexturl" href=""><button class="navbar-toggler" style="background: #ff2b2b;width: 95%;"><h3 style="color: white;font-size: 12px;margin: 5px;margin-bottom: 7px;">NEXT EPISODE</h3></button></a>
-              <br><br>
+              <br>
 <section style="display:none;"><a href="https://mobirise.site/p" style="flex: 1 1; height: 3rem; padding-left: 1rem;"></a><p style="flex: 0 0 auto; margin:0; padding-right:1rem;"><a href="" style="color:#aaa;"></a></p></section>
   <input name="animation" type="hidden">
   <script
